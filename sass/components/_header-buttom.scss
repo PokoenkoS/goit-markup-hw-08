@@ -1,0 +1,33 @@
+.header-button {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+  }
+   }
+  
+  @media (min-width: 768px) {
+    .header-button {
+      display: none;
+    }
+  }
+  .menu-container .header-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $primary-text-color;
+  }
+  

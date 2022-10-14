@@ -1,0 +1,18 @@
+.hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: $accent-color;
+    color: $text-color-white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: none;
+    }

@@ -1,0 +1,30 @@
+.btn-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     width: 30px;
+     height: 30px;
+     background-color: $text-color-white;
+     border-radius: 50%;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     left: 412px;
+     top: 8px;
+    
+ }
+ @media screen and (min-width: 1200px) {
+    .btn-close{
+        left: 490px;
+    }
+     }
+
+.btn-close__icon {
+ 
+    background: $text-color-white;
+    fill:rgba(0, 0, 0, 1);
+    transition: 250ms $timing-function; 
+    &:hover {
+        transition: 250ms $timing-function;
+        fill: $accent-color;
+    }
+    }
