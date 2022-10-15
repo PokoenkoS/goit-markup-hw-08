@@ -1,0 +1,33 @@
+.client-list {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.client-list__areal {
+    display: flex;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px; 
+    justify-content: center;
+ align-items: center; 
+ transition: 250ms $timing-function;
+
+ &:hover> svg,
+ &:focus> svg {
+    fill: $accent-color;
+    transition: 250ms $timing-function;
+}
+
+&:hover,
+&:focus {
+  border-color: $accent-color;
+  transition: 250ms $timing-function;
+    
+}
+}
+
+.client-list__icon {
+  fill : $icon-color;   
+  transition: 250ms $timing-function;
+}

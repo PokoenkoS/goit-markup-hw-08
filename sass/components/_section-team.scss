@@ -1,0 +1,14 @@
+.section-team {
+    background-color: $button-background-color;
+    padding-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    }
+}
+
+    
