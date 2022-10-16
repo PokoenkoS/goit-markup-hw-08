@@ -35,14 +35,19 @@ transition: 1250ms $timing-function;
     flex-wrap: nowrap;
     width: 768px;
     min-width: 73px;
+    justify-content: center;
 }
 }
-   
-
-
 .btn-list__item:nth-child(n+4) {
     padding-top: 15px;
 }
+@media screen and (min-width: 768px) {
+    .btn-list__item:nth-child(n+4) {
+        padding-top: 0;
+    }
+}
+
+
         
 .btn-list__button {
     color: $primary-text-color;
