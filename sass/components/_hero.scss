@@ -26,31 +26,30 @@
             ),
             url(../images/hero-mob-2x.jpg);  
     }
+}
     
-    }
-    @include tablet { 
-        .hero-overlay{
-            width: 768px;
-            background-image: linear-gradient(
+    
+@include tablet { 
+    .hero-overlay{
+        width: 768px;
+        background-image: linear-gradient(
+    
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-tab-1x.jpg);
+
+    @include retina {
+        background-image: linear-gradient(
         
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/hero-tab-1x.jpg);
-
-        @include retina {
-            background-image: linear-gradient(
-            
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-                ),
-                url(../images/hero-tab-2x.jpg);  
-        }
-        }
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/hero-tab-2x.jpg);  
     }
+    }
+}
    
-   
-
      .hero-title {
     color: $text-color-white;
     font-weight: 900;
@@ -67,27 +66,27 @@
     }
  
 
-         @include desktop {
-            .hero-overlay{
-               width: 1200px;
-               height: 600px;
-               padding-top: 200px;
-               background-image: linear-gradient(
+    @include desktop {
+        .hero-overlay {
+           width: 1600px;
+           height: 600px;
+           padding-top: 200px;
+           background-image: linear-gradient(
+        
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desk-1x.jpg);
+
+        @include retina {
+            background-image: linear-gradient(
             
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-            ),
-            url(../images/hero-desk-1x.jpg);
-    
-            @include retina {
-                background-image: linear-gradient(
-                
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)
-                    ),
-                    url(../images/hero-desk-2x.jpg);  
-            }
-            }
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/hero-desk-2x.jpg);  
+        }
+        }
             .hero-title {
                 font-size: 44px;
                 line-height: 1.36;

@@ -4,7 +4,6 @@
 .container-btn {
     display: flex;
     margin-bottom: 50px;
-  
     margin-top: 60px;
     }
 
@@ -32,7 +31,9 @@ transition: 1250ms $timing-function;
     }
 
 }
-
+.btn-list__item:nth-child(n+4) {
+    padding-top: 15px;
+}
 @media screen and (min-width: 768px) {
 .btn-list {
     flex-wrap: nowrap;
@@ -40,17 +41,10 @@ transition: 1250ms $timing-function;
     min-width: 73px;
     justify-content: center;
 }
-}
 .btn-list__item:nth-child(n+4) {
-    padding-top: 15px;
+    padding-top: 0;
 }
-@media screen and (min-width: 768px) {
-    .btn-list__item:nth-child(n+4) {
-        padding-top: 0;
-    }
 }
-
-
         
 .btn-list__button {
     color: $primary-text-color;
@@ -64,7 +58,6 @@ transition: 1250ms $timing-function;
     border-radius: 4px;
     padding: 6px 22px;
     display: inline-block;
-    // min-width: 73px;
     border: none;
     transition: 250ms $timing-function;
 
