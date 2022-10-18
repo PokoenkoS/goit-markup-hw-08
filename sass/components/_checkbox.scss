@@ -11,6 +11,11 @@
 line-height: 1.17;
      
 }
+@media screen and (min-width: 1200px) {
+    .label {
+        font-size: 14px;
+}
+    }
 
 
 .checkbox {

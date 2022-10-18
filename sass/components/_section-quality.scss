@@ -18,14 +18,20 @@
     margin-top: 60px;
     
     }
-
-    .quality-list__item {
-        width: 450px;
-    } 
-
     .quality-list__item:not(:first-child) {
         padding-top: 30px;
          }
+    
+    @media screen and (min-width: 480px) {
+        .quality-list__item {
+            width: 450px;
+        } 
+        .quality-list__pictures {
+            width: 450px;
+            height: 120px;
+    }
+}
+    
 
          @media screen and (min-width: 768px) {
             .quality-list__item {
@@ -61,8 +67,6 @@
     
      
         .quality-list__pictures {
-            width: 450px;
-            height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
