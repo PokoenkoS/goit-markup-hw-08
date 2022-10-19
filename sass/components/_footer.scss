@@ -22,5 +22,10 @@
         .footer {
             flex-wrap: nowrap;
            
+                     
         }
+        .footer-container {
+        align-items: baseline;  
+        justify-content: flex-start;
     }
+}

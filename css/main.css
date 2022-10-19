@@ -1109,6 +1109,10 @@ body {
   .footer {
     flex-wrap: nowrap;
   }
+  .footer-container {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
 }
 .footer-mail {
   text-align: center;
@@ -1170,8 +1174,6 @@ body {
   position: absolute;
   top: 20%;
   left: 16px;
-  transform: translateY(-50%);
-  transform: translateX(20%);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -1184,9 +1186,14 @@ body {
   .footer-form__input {
     width: 358px;
     margin-bottom: 0;
+    margin-right: 12px;
   }
   .footer-form__label {
     top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer-form {
+    display: flex;
   }
 }
 .footer-icon {
@@ -1203,7 +1210,8 @@ body {
   .footer-icon {
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
+    margin-right: 93px;
+    flex-direction: column;
   }
   .footer-icon__tittle {
     display: flex;
@@ -1258,6 +1266,7 @@ body {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer-adress {
+    text-align: left;
     margin-right: 70px;
   }
 }

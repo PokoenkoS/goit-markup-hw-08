@@ -3,6 +3,7 @@
       text-align: center;
     
        margin-top: 60px;
+       
   
  }  
  
@@ -16,7 +17,8 @@
     .footer-icon {
         display: flex;
         flex-wrap: wrap;
-        margin-right: auto;
+        margin-right: 93px;
+        flex-direction: column;
      }
      .footer-icon__tittle {
         display: flex;
