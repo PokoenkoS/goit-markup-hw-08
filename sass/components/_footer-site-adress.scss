@@ -3,22 +3,15 @@
     text-align: center;
    
 }
-@media screen and (min-width: 480px) {
-    .footer-adress {
-        
-    }
-}
-@media screen and (min-width: 768px) {
-    .footer-adress {
-        
-}
+
+
 @media screen and (min-width: 1200px) {
     .footer-adress {
         text-align: left;
         margin-right: 70px;
     }
 }
-}
+
 .site-adress__link{
     display: inline-block;
     text-decoration: none;
