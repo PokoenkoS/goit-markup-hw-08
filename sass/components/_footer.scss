@@ -5,21 +5,22 @@
     
       
     }
-    @media screen and (min-width: 768px) {
-        .footer {
-            height: 463px;
-        }
-    }    
-
+    
     .footer-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+       flex-direction: column; 
     }
-
+    @media screen and (min-width: 786px) {
+        .footer-container {
+            justify-content: space-around;
+            flex-direction: row; 
+        }
+        }
     @media screen and (min-width: 1200px) {
         .footer {
             flex-wrap: nowrap;
-            height: 252px;
+           
         }
     }
