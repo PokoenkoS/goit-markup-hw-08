@@ -13,8 +13,8 @@
 
     .footer-container {
         display: flex;
-        align-items: baseline;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
