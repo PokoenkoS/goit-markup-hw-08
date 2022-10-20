@@ -514,6 +514,7 @@ body {
 @media screen and (min-width: 1200px) {
   .label {
     font-size: 14px;
+    line-height: 1.7;
   }
 }
 .checkbox {
