@@ -26,8 +26,8 @@
 
 .btn-close__icon {
  
-    background: $text-color-white;
-    fill: $text-color-black;
+    //   fill: $text-color-black;
+    color: black;
     transition: 250ms $timing-function; 
     &:hover {
         transition: 250ms $timing-function;
