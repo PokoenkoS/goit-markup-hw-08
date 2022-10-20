@@ -86,7 +86,14 @@
         </section>
         <!-- Модальне вікно -->
         <div class="backdrop is-hidden" data-modal>
+          
         <div class="modal ">
+          <button class="btn-close" data-modal-close>
+            <svg class="btn-close__icon" width="11" height="11">
+              <use href="./images/icons.svg#icon-close">
+              </use>
+            </svg>
+          </button>
           
           <div class="form">
             <form class="modal-form">
@@ -97,8 +104,8 @@
                 <svg class="modal-form__icon">
                   <use href="./images/icons.svg#icon-person-form"></use>
                 </svg>
-                <label for="name">       
-                  <span class="modal-form__label"> Ім'я</span></label>
+                <label for="name"><span class="modal-form__label">Ім'я</span>
+                </label>
                  <input type="text" name="name" class="modal-form__input" id="name">
                                                   
               </div>
@@ -135,12 +142,7 @@
               <button type="submit" class="button-form">Відправити</button>
             </form>
           </div>
-          <button class="btn-close" data-modal-close>
-            <svg class="btn-close__icon" width="11" height="11">
-              <use href="./images/icons.svg#icon-close">
-              </use>
-            </svg>
-          </button>
+          
   
         </div>
         </div>

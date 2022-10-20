@@ -8,7 +8,7 @@
      background-color: $text-color-white;
      border-radius: 50%;
      border: 1px solid rgba(0, 0, 0, 0.1);
-     left: 412px;
+     left: 85%;
      top: 8px;
     
  }
@@ -17,6 +17,11 @@
         left: 490px;
     }
      }
+     @media screen and (min-width: 480px) {
+        .btn-close{
+            left: 412px;
+        }
+         }
 
 .btn-close__icon {
  
