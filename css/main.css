@@ -194,10 +194,9 @@ body {
 }
 .menu-container .header-button {
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 15px;
   color: #212121;
-  align-items: flex-start;
 }
 
 .site-contact {
@@ -277,8 +276,17 @@ body {
   text-decoration: none;
 }
 
+.form-mob {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav {
   margin-bottom: 302px;
+}
+
+.contact {
+  margin-bottom: 64px;
 }
 
 .mobile-menu {
@@ -310,10 +318,6 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-
-.contact {
-  margin-bottom: 64px;
 }
 
 .contact__link {
