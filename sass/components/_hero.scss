@@ -28,30 +28,9 @@
 }
     
     
-@include tablet { 
-    .hero-overlay{
-        width: 768px;
-        background-image: linear-gradient(
-    
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-tab-1x.jpg);
 
-    @include retina {
-        background-image: linear-gradient(
-        
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-            ),
-            url(../images/hero-tab-2x.jpg);  
-    }
-    }
-}
 @media screen and (min-width: 480px) {
-    // .hero-overlay {
-    //  width: 480px;
-    // }
+   
     .hero-title {
         width: 360px;
 }
@@ -74,7 +53,7 @@
 
     @include desktop {
         .hero-overlay {
-           width: 1600px;
+           max-width: 1600px;
            height: 600px;
            padding-top: 200px;
            background-image: linear-gradient(
@@ -100,4 +79,23 @@
              
             }
              }
-             
+             @include tablet { 
+                .hero-overlay{
+                   
+                    background-image: linear-gradient(
+                
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/hero-tab-1x.jpg);
+            
+                @include retina {
+                    background-image: linear-gradient(
+                    
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                        ),
+                        url(../images/hero-tab-2x.jpg);  
+                }
+                }
+            }
