@@ -279,20 +279,11 @@ body {
 .form-mob {
   display: flex;
   flex-direction: column;
-}
-
-.nav {
-  margin-bottom: 302px;
-}
-
-.contact {
-  margin-bottom: 64px;
+  height: 100%;
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  margin-bottom: auto;
 }
 
 .mobile-menu__link {
@@ -340,10 +331,6 @@ body {
   color: #757575;
 }
 
-.social {
-  display: flex;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -380,7 +367,9 @@ body {
 
 .menu-container.is-open {
   transform: translateX(0);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
 }
 
@@ -682,9 +671,9 @@ body {
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   padding-top: 118px;
+  padding-bottom: 118px;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-overlay {
@@ -715,6 +704,7 @@ body {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-1x.jpg);
   }
 }
@@ -1141,6 +1131,25 @@ body {
   margin-top: 60px;
 }
 
+.footer-form__input {
+  background: #2F303A;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+  color: #F5F4FA;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
+}
+.footer-form__input:focus + .footer-form__label {
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form__input:hover + .footer-form__label {
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 480px) {
   .footer-form__input {
     width: 450px;
@@ -1168,24 +1177,6 @@ body {
 .footer-form {
   display: inline-block;
   position: relative;
-}
-
-.footer-form__input {
-  background: #2F303A;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 16px;
-  color: #F5F4FA;
-  margin-bottom: 20px;
-  height: 50px;
-}
-.footer-form__input:focus + .footer-form__label {
-  opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-form__input:hover + .footer-form__label {
-  opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input {
