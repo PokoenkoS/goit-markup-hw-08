@@ -1,89 +1,90 @@
 .form {
     display: flex;
     }
-    .modal-form {
-    margin-left: auto;
-    margin-right: auto;
-     }
-    
-     .modal-form__title {
-        
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        color: $primary-text-color;
-        margin-bottom: 12px;
-        text-align: center;
-     
-        }
-        @media screen and (min-width: 1200px) {
-            .modal-form__title{
-             width: 448px;
-             }
-             }
-    
-    .modal-form__icon {
-        position: absolute;
-        display: inline-block;
-        width: 18px;
-        height: 18px; 
-        transform: translateY(-50%);
-        fill: $primary-text-color;
-        top: 60%;
-        left: 12px;
-        transition: 250ms $timing-function;
-        }
-          
-    
-    .modal-form__field {
-    position: relative;  
-     padding-bottom: 10px;
-    
-     &:focus-within > .modal-form__icon {
-        fill: $accent-color;
-        transition: 250ms $timing-function;
-        }
-    
-    &:focus-within > .modal-form__input {
-        outline: none;
-        border: 1px solid $accent-color;
-        transition: 250ms $timing-function;
-        } 
-    
+.modal-form {
+margin-left: auto;
+margin-right: auto;
     }
     
-    .modal-form__label {
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: $secondary-text-color;
-        margin-bottom: 4px;
+.modal-form__title {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+color: $primary-text-color;
+margin-bottom: 12px;
+text-align: center;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-form__title{
+        width: 448px;
+        }
         }
     
-    .modal-form__input {
-     
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    height: 40px; 
-    margin-top: 0;
-    padding-left: 42px;
+.modal-form__icon {
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px; 
+    transform: translateY(-50%);
+    fill: $primary-text-color;
+    top: 60%;
+    left: 12px;
     transition: 250ms $timing-function;
     }
+          
     
-    @media screen and (min-width: 320px) {
-        .modal-form__input {
-            width: 100%;
+.modal-form__field {
+position: relative;  
+    padding-bottom: 10px;
+
+    &:focus-within > .modal-form__icon {
+    fill: $accent-color;
+    transition: 250ms $timing-function;
     }
+
+&:focus-within > .modal-form__input {
+    outline: none;
+    border: 1px solid $accent-color;
+    transition: 250ms $timing-function;
+    } 
+
 }
-    @media screen and (min-width: 480px) {
-        .modal-form__input{
-         width: 370px;
-         }
-         }
-    @media screen and (min-width: 1200px) {
-        .modal-form__input{
-         width: 448px;
-         }
-         }
     
+.modal-form__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+    margin-bottom: 4px;
+    }
+
+.modal-form__input {
     
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+height: 40px; 
+margin-top: 0;
+padding-left: 42px;
+transition: 250ms $timing-function;
+}
+
+@media screen and (min-width: 320px) {
+    .modal-form__input {
+        width: 100%;
+}
+}
+
+@media screen and (min-width: 480px) {
+    .modal-form__input{
+        width: 370px;
+        }
+        }
+        
+@media screen and (min-width: 1200px) {
+    .modal-form__input{
+        width: 448px;
+        }
+        }
+

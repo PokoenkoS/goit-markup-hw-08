@@ -49,15 +49,11 @@
             &:nth-last-child(-n+3) {
             margin-bottom: 0;
             }
-           
-    }  
+        }  
     .first {
         height: auto;
     } 
-  
     }
-    
-   
 
     .portfolio-list__image {
     display: block; 
@@ -67,8 +63,7 @@
         opacity: 1;
         transition: 250ms $timing-function;
         transform: translateY(-100%);
-        
-    }
+     }
     &:focus .portfolio-list__img-overlay {
         opacity: 1;
         transition: 250ms $timing-function;
@@ -113,8 +108,7 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     }
-    
-    
+      
     .portfolio_list__signature {
     color: $primary-text-color;
     font-weight: 700;
@@ -122,12 +116,10 @@
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    
     }
     
     .portfolio_list__about {
     color: $secondary-text-color;
     font-size: 16px;
     line-height: 1.875;
-    
-    }
+     }

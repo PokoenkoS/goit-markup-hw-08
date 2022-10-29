@@ -2,11 +2,9 @@
     position: fixed;
     top: 0;
     left: 0;
-   
     padding: 32px;
     background-color: $text-color-white;
     z-index: 999;
-  
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
     display: none;
@@ -18,8 +16,8 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    // justify-content: space-between;
-  }
+    }
+    
   @media screen and (min-width: 480px) {
     .menu-container {
   width: 480px;

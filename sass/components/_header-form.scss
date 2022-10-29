@@ -1,4 +1,3 @@
-  
   .form-mob {
     display: flex;
     flex-direction: column;
@@ -21,58 +20,51 @@
     font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  
-  color: $primary-text-color ;
-  
+   color: $primary-text-color ;
   }
+
   .mobile-link__curent {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  
-  color: $accent-color ;
+    color: $accent-color ;
   }
   
-  
-
   .contact__link {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  
   color: $accent-color;
   }
-  .contact__item:not(:last-child) {
-    padding-bottom: 32px;
 
+  .contact__item:not(:last-child) {
+  padding-bottom: 32px;
   }
+
   .contact__mail {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  
   color: $secondary-text-color;
   }
   
- 
   .social-list {
       display: flex;
       flex-wrap: wrap;
   }
   
-
 .social-item {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color;
-     
-    }
+}
+
    .social-list__item:not(:last-child) {
         border-right: 1px solid rgba(33, 33, 33, 0.2);  
         padding-right: 10px;
