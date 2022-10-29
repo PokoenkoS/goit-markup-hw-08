@@ -46,7 +46,27 @@ background-size: cover;
     margin-bottom: 30px;
      text-align: center;
     }
- 
+    @include tablet { 
+        .hero-overlay{
+            
+            background-image: linear-gradient(
+        
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tab-1x.jpg);
+    
+        @include retina {
+            background-image: linear-gradient(
+            
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/hero-tab-2x.jpg);  
+        }
+        }
+    }
+
 @include desktop {
 .hero-overlay {
     max-width: 1600px;
@@ -76,23 +96,4 @@ url(../images/hero-desk-1x.jpg);
         
     }
         }
-    @include tablet { 
-    .hero-overlay{
-        
-        background-image: linear-gradient(
-    
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-tab-1x.jpg);
-
-    @include retina {
-        background-image: linear-gradient(
-        
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-            ),
-            url(../images/hero-tab-2x.jpg);  
-    }
-    }
-}
+ 
